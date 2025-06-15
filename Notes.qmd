@@ -1,0 +1,32 @@
+# preprocessor instructions
+- define
+- undef
+- include
+- if
+- ifdef
+- ifndef
+- else
+- elif
+- endif
+- line
+- error
+- pragma
+
+
+# initialize a variable
+- int num = 10; 
+- int num (10);
+- int num {10};
+
+# data type
+## integer
+- short int, 16-bit
+- long int, 32-bit, the default type for int
+- long long int, 64-bit
+ 
+## char
+char: type for character, 8-bit integer indeed.
+
+- signed char: signed 8-bit integer
+- unsigned char: unsigned 8-it integer
+- char: either signed char or unsigned char
