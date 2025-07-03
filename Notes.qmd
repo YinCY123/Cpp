@@ -1,4 +1,8 @@
 # preprocessor instructions
+The preprocessor is executed before the compilation. 
+Preprocessing directives begin with a # character.
+Each directive occupies one line.
+
 - define
 - undef
 - include
@@ -12,16 +16,24 @@
 - error
 - pragma
 
+# Macro
+replace
 
 # initialize a variable
-- int num = 10; 
+- int num = 10;  
 - int num (10);
 - int num {10};
+
+int i; # declare a variable
+int j = 0; # declare and initialize a variable
+int k; # declare a variable
+k = 20; # assignment
+
 
 # data type
 ## integer
 - short int, 16-bit
-- long int, 32-bit, the default type for int
+- long int, can be 16-bit, 32-bit, the default type for int
 - long long int, 64-bit
  
 ## char
@@ -30,3 +42,142 @@ char: type for character, 8-bit integer indeed.
 - signed char: signed 8-bit integer
 - unsigned char: unsigned 8-it integer
 - char: either signed char or unsigned char
+
+## bool
+- A C++ keyword, but not C keyword
+- bool width: 1 byte (8 bits), NOT 1 bit
+- Value: true (1) or false (0)
+
+## size_t
+- integer
+- unsigned integer
+- can store the maximum size of a theretically possible object of any type
+
+## fixed width integer types (since C++11)
+defined in <cstdint>
+- int8_t
+- int16_t
+- int32_t
+- int64_t
+- uint8_t
+- uint16_t
+- uint32_t
+- uint64_t
+...
+
+##　float 
+- float a = 1.4f
+
+## inf and nan
+- inf: infinite
+- nan: not a number
+
+## arithmetic Operators
+- 95 //decimal
+- 0137 // octal
+- 0x5F // hexadecimal
+
+## auto (since C++11)
+auto is placeholder type specifier
+
+auto a = 2; int
+auto bc = 2.3; double
+auto c; valid in C, error in C++
+auto d = a * 1.2; double
+
+
+# if statement
+if
+
+else if
+
+else
+
+## ? : operator
+factor = isPositive ? 1 : -1;
+
+## condition
+The condition should be an expression which is convertible to bool.
+
+## while
+
+
+## do-while
+The test takes place after each iteration in a do-while loop.
+The test takes place before each iteration in a while loop.
+
+
+## break
+
+
+## continue
+
+## goto
+jump to a desired location in the code.
+an unrecommended statement
+
+
+## switch
+
+
+# Arrays
+A contigously allocated memory
+fixed number of objects
+its element type can be any fundamental type
+
+int num_array[5]; // uninitialized array, random values
+int num_array[5] = {0, 1, 2, 3, 4}; // initialized array
+
+## variable-length arrays
+if the length is not an integer constant expression, the array will be a variable-length one.
+
+## arrays of unknown size
+The number is not specified in the declaration.
+
+int num_array[] = {1, 2, 3, 4}; // the type of num_array is "array of 4 int"
+
+## element accessing
+int array1[4] = {9, 8, 7, 6};
+int array2[4];
+array2 = array1; // error in C++
+array2[0] = array1[0];
+array2[1] = array1[1];
+
+**no bounds-checkingin C/C++.**
+
+Arrays are not objects in C/C++.
+Arrays can be regaarded as addresses.
+
+## multidimentioanl arrays
+
+int mat[2][3] = {{11,12,13}, {14,15,16}};
+
+for(int r = 0; r < rows; r++){
+    for (int c = 0; c < cols; c++){
+        cout << mat[r][c] << ",";
+    }
+    cout << endl;
+}
+
+
+## const arrays
+const float PI = 3.1415926f;
+PI += 1.f; // error
+
+const float values[4] = {1.1f, 2.2f, 3.3f, 4.4f};
+values[0] = 1.0f; // error
+
+# Strings
+## array-style strings
+
+char rabbit[16] = {'P', 'e', 't', 'e', 'r'};
+char bad_pig[9] = {'P', "e", 'p', 'p', 'a', ' ', 'P', 'i', 'g'}; 
+chat good_pig[10] = {'P', 'e', 'p', 'p', 'a', ' ', 'P', 'i', 'g', '\0'};
+
+
+# String literals
+char name1[] = "Southern University o fScience and Technology";
+char name2[] = "Southern University of"  "Science and technology";
+char name3[] = "ABCD"; // how many bytes for the array?
+
+
