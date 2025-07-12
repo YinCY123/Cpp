@@ -181,3 +181,4 @@ char name2[] = "Southern University of"  "Science and technology";
 char name3[] = "ABCD"; // how many bytes for the array?
 
 
+
