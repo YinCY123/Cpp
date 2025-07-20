@@ -181,4 +181,9 @@ char name2[] = "Southern University of"  "Science and technology";
 char name3[] = "ABCD"; // how many bytes for the array?
 
 
+# function
+- pass by value 
+- pass by reference
+
+
 
