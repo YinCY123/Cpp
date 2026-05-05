@@ -30,9 +30,38 @@
 // }
 
 
+// int main()
+// {
+//     std::cout << sizeof(int) << std::endl;
+
+//     return 0;
+// }
+
+// int five()
+// {
+//     return 5;
+// }
+
+// int main()
+// {
+//     int a { 2 };
+//     int b { 2 + 3 };
+//     int c { ( 2 * 3) + 4 };
+//     int d { b };
+//     int e { five() };
+
+//     return 0;
+// }
+
 int main()
 {
-    std::cout << sizeof(int) << std::endl;
+    std::cout << "enter an integer: ";
+    
+    int x {};
+    std::cin >> x;
+    // x = x * 2;
+    std::cout << "Doube " << x << " is: " << x * 2 << "\n";
+    std::cout << "Triple " << x << " is: " << x * 3 << "\n";
 
     return 0;
 }
