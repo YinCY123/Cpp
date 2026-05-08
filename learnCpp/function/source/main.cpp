@@ -149,21 +149,48 @@
 //     return 0;
 // }
 
-int getValuesFromUser()
-{
-    int input;
-    std::cout << "enter an integer: ";
-    std::cin >> input;
-    return input;
-}
+// int getValuesFromUser()
+// {
+//     int input;
+//     std::cout << "enter an integer: ";
+//     std::cin >> input;
+//     return input;
+// }
 
-int doubleNumber()
-{
-    return 2 * getValuesFromUser();
-}
+// int doubleNumber()
+// {
+//     return 2 * getValuesFromUser();
+// }
+
+// int main()
+// {
+//     int x { doubleNumber() };
+//     std::cout << "Doubled is: " << x << '\n';
+// }
+
+
+// ============ forward declaration and definitions =============
+// int add(int x, int y); 
+
+/* forward declaration of add, 
+function declarations do not need 
+to specify the names of the parameters 
+*/
+
+// int add(int, int); // this is totaly fine
+
+// int main()
+// {
+//     std::cout << "The sum of 3 and 4 is: " << add(3,4) << '\n';
+//     return 0;
+// }
+
+
+// ========= macro ===========
+#define My_NAME "alex"
 
 int main()
 {
-    int x { doubleNumber() };
-    std::cout << "Doubled is: " << x << '\n';
+    std::cout << "my name is: " << My_NAME << "\n";
+    return 0;
 }
