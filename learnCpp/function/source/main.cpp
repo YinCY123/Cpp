@@ -170,7 +170,7 @@
 
 
 // ============ forward declaration and definitions =============
-// int add(int x, int y); 
+// #include "add.h"
 
 /* forward declaration of add, 
 function declarations do not need 
@@ -187,10 +187,10 @@ to specify the names of the parameters
 
 
 // ========= macro ===========
-#define My_NAME "alex"
+// #define My_NAME "alex"
 
-int main()
-{
-    std::cout << "my name is: " << My_NAME << "\n";
-    return 0;
-}
+// int main()
+// {
+//     std::cout << "my name is: " << My_NAME << "\n";
+//     return 0;
+// }
