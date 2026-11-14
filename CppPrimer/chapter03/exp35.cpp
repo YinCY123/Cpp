@@ -5,16 +5,28 @@ using std::cout;
 using std::cin;
 using std::endl;
 
+// int main()
+// {
+//     string s1;
+//     string s2;
+
+//     cout << "enter two strings: ";
+//     cin >> s1 >> s2;
+//     string s = s1 + s2;
+//     cout << "the concatenate of the two string: "
+//          << s
+//          << endl;
+//     return 0;
+// }
+
 int main()
 {
-    string s1;
-    string s2;
-
-    cout << "enter two strings: ";
-    cin >> s1 >> s2;
-    string s = s1 + s2;
-    cout << "the concatenate of the two string: "
-         << s
-         << endl;
+    string str;
+    string s;
+    cout << "Please enter strings: ";
+    while(cin >> s){
+        str += s;
+    }
+    cout << str << endl;
     return 0;
 }
