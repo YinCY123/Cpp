@@ -1,11 +1,13 @@
 #include <iostream>
-#include <vector>
-#include <iterator>
-
-using std::vector;
 using std::cout;
 using std::cin;
 using std::endl;
+
+#include <vector>
+using std::vector;
+
+#include <iterator>
+
 
 int main()
 {

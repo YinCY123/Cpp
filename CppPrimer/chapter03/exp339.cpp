@@ -3,10 +3,12 @@
 
 int main()
 {
-    std::char str1 = "some string";
-    std::char str2 = "a different string";
+    char str1[] = "some string";
+    char str2[] = "some string";
 
-    std::cout << str1 + " " + str2 << std::endl;
+    // std::cout << str1 + " " + str2 << std::endl;
+    std::cout << strcmp(str1,str2)
+              << std::endl;
 
     return 0;
 }
