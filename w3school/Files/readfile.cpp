@@ -16,7 +16,7 @@ int main()
     ifstream MyReadFile("filename.txt");
 
     while(getline(MyReadFile, mytext)){
-        cout << mytext << endl;;
+        cout << mytext << endl;
     }
     MyReadFile.close();
 
