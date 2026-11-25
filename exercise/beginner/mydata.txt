@@ -1,0 +1,4 @@
+Hello, File Handling!
+the second line.
+New line of the content.
+New line of the content.
